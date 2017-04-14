@@ -50,6 +50,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render("projects", {
+        name: "Abhijit",
+        welcomeMessage: 'Welcome to Github Projects'
+    });
+});
+
 
 app.listen(port, () => {
     console.log('listening on port 3000');
